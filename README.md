@@ -64,7 +64,7 @@ npm run build
 ## Déploiement
 
 Le portfolio est déployé via GitHub Pages.
-  
+   
 ## Auteur
 
 Yoann Donizetti
