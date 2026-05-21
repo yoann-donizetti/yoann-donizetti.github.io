@@ -1,0 +1,398 @@
+/* ========================================
+   PROJECTS SECTION
+======================================== */
+
+.projects-section {
+  @apply bg-slate-950 px-6 py-20 md:py-24 overflow-hidden;
+}
+
+.projects-container {
+  @apply max-w-7xl mx-auto;
+}
+
+/* ========================================
+   HEADER
+======================================== */
+
+.projects-header {
+  @apply mb-16;
+}
+
+.projects-label {
+  @apply text-orange-500
+  font-semibold
+  uppercase
+  tracking-wider
+  mb-3;
+}
+
+.projects-header-content {
+  @apply max-w-4xl mx-auto text-center;
+}
+
+.project-title {
+  @apply text-3xl md:text-4xl
+  font-bold
+  text-white
+  leading-tight
+  mb-5
+  text-center;
+}
+
+.projects-description {
+  @apply text-slate-300
+  text-lg md:text-xl
+  leading-8
+  max-w-4xl
+  mx-auto;
+}
+
+/* ========================================
+   FEATURED PROJECTS
+======================================== */
+
+.featured-projects {
+  @apply grid
+  grid-cols-1
+  xl:grid-cols-2
+  gap-8;
+}
+
+/* ========================================
+   CARD
+======================================== */
+
+.project-card {
+  @apply bg-slate-800/70
+  border border-slate-700
+  rounded-3xl
+
+  p-6 md:p-8
+
+  shadow-xl
+
+  transition-all duration-300
+
+  hover:bg-slate-800
+  hover:border-orange-500
+  hover:-translate-y-1
+  hover:shadow-orange-500/10
+
+  flex flex-col
+  h-full;
+}
+
+.project-category {
+  @apply text-orange-500
+  font-semibold
+  text-sm
+  uppercase
+  tracking-wider
+  mb-4;
+}
+
+.project-title {
+  @apply text-3xl md:text-4xl
+  font-bold
+  text-white
+  leading-tight
+  mb-5;
+}
+
+.project-description {
+  @apply text-slate-300
+  leading-8
+  mb-7;
+}
+
+/* ========================================
+   STACK
+======================================== */
+
+.project-stack {
+  @apply flex flex-wrap
+  justify-center
+  gap-3
+  mb-7;
+}
+.project-tag {
+  @apply bg-slate-900/90
+  border border-slate-700
+  text-slate-300
+
+  px-4 py-2
+  rounded-2xl
+  text-sm
+
+  transition duration-300
+
+  hover:border-orange-500
+  hover:text-orange-400;
+}
+
+/* ========================================
+   HIGHLIGHTS
+======================================== */
+
+.project-highlights {
+  @apply list-disc list-inside
+  text-slate-400
+  leading-8
+  space-y-1
+  mb-8;
+}
+
+/* ========================================
+   ACTIONS
+======================================== */
+
+.project-actions {
+  @apply flex flex-wrap
+  gap-3
+  mt-auto
+  pt-2
+  mb-8
+  justify-center;
+}
+
+/* Bouton principal */
+
+.project-button {
+  @apply inline-flex items-center justify-center
+
+  bg-orange-500
+  text-white
+
+  px-6 py-3
+
+  rounded-2xl
+  text-sm font-medium
+  transition-all duration-300
+
+  hover:bg-orange-400
+  hover:scale-105
+  
+  shadow-lg;
+}
+
+/* Boutons secondaires */
+
+.project-button-secondary {
+  @apply inline-flex items-center justify-center
+
+  border border-orange-500
+  text-orange-500
+
+  px-6 py-3
+
+  rounded-2xl
+  text-sm font-medium
+
+  transition-all duration-300
+
+  hover:bg-orange-500
+  hover:text-white
+  hover:scale-105;
+}
+
+/* ========================================
+   CARROUSEL
+======================================== */
+
+.project-carousel {
+  @apply relative
+  overflow-hidden
+  rounded-3xl;
+}
+
+.project-preview-image {
+  @apply w-full
+  h-[220px]
+  object-cover
+  rounded-3xl
+  border border-slate-700;
+}
+
+/* Boutons */
+
+.project-carousel-button {
+  @apply absolute
+  top-1/2
+  -translate-y-1/2
+
+  w-11 h-11
+
+  rounded-full
+
+  bg-slate-950/80
+  border border-slate-700
+
+  text-white
+
+  flex items-center justify-center
+
+  transition duration-300
+
+  hover:border-orange-500
+  hover:text-orange-500;
+}
+
+.project-carousel-button.left {
+  @apply left-4;
+}
+
+.project-carousel-button.right {
+  @apply right-4;
+}
+
+/* ========================================
+   DOTS
+======================================== */
+
+.project-carousel-dots {
+  @apply flex justify-center gap-2 mt-4;
+}
+
+.project-dot {
+  @apply w-2.5 h-2.5
+  rounded-full
+  bg-slate-600
+  transition-all duration-300;
+}
+
+.project-dot.active {
+  @apply bg-orange-500 scale-110;
+}
+
+/* ========================================
+   OTHER PROJECTS
+======================================== */
+
+.other-projects-section {
+  @apply mt-24;
+}
+
+.other-projects-title,
+.personal-projects-title {
+  @apply text-3xl md:text-4xl
+  font-bold text-white
+  mb-8
+  text-center;
+}
+
+.other-projects-grid {
+  @apply grid
+  grid-cols-1
+  md:grid-cols-2
+  xl:grid-cols-3
+  gap-5;
+}
+
+.other-project-card {
+  @apply bg-slate-900/90
+  border border-slate-700
+
+  rounded-2xl
+  p-6
+
+  transition-all duration-300
+
+  hover:border-orange-500
+  hover:-translate-y-1;
+}
+
+.other-project-card-title {
+  @apply text-white
+  text-xl
+  font-semibold
+  mb-4
+  text-center;
+}
+
+.other-project-card-description {
+  @apply text-slate-400
+  text-sm
+  leading-7
+  text-center;
+}
+
+/* ========================================
+   PERSONAL PROJECTS
+======================================== */
+
+.personal-projects-section {
+  @apply mt-20;
+}
+
+.personal-project-card {
+  @apply bg-slate-900/90
+  border border-slate-700
+
+  rounded-3xl
+  p-6 md:p-8
+
+  flex flex-col lg:flex-row
+  justify-between
+  items-start lg:items-center
+
+  gap-6
+
+  transition-all duration-300
+
+  hover:border-orange-500;
+}
+
+.personal-project-title {
+  @apply text-2xl md:text-3xl
+  font-semibold
+  text-white
+  mb-3;
+}
+
+.personal-project-description {
+  @apply text-slate-400
+  leading-8
+  max-w-5xl;
+}
+
+.personal-project-status {
+  @apply bg-orange-500/10
+  border border-orange-500
+  text-orange-400
+
+  px-5 py-2.5
+
+  rounded-2xl
+  text-sm font-semibold;
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 768px) {
+
+  .projects-title {
+    @apply text-3xl;
+  }
+
+  .projects-description {
+    @apply text-base;
+  }
+
+  .project-title {
+    @apply text-2xl;
+  }
+
+  .project-card {
+    @apply p-5 rounded-2xl;
+  }
+
+  .project-preview-image {
+    @apply h-[180px];
+  }
+
+  .project-carousel-button {
+    @apply w-9 h-9;
+  }
+}

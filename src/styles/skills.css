@@ -1,0 +1,257 @@
+/* ========================================
+   SKILLS SECTION
+   Section compétences
+======================================== */
+
+/* ========================================
+   SECTION GLOBALE
+======================================== */
+
+.skills-section {
+  @apply bg-slate-900 px-6 py-20 md:py-24;
+}
+
+/* Conteneur principal */
+.skills-container {
+  @apply max-w-7xl mx-auto;
+}
+
+/* ========================================
+   HEADER
+======================================== */
+
+.skills-header {
+  @apply max-w-7xl mb-16;
+}
+
+/* Petit label orange */
+.skills-label {
+  @apply text-orange-500
+  font-semibold
+  uppercase
+  tracking-wide
+  mb-4;
+}
+
+/* Contenu centré */
+.skills-header-content {
+  @apply max-w-4xl mx-auto text-center;
+}
+
+/* Titre principal */
+.skills-title {
+  @apply text-3xl md:text-5xl
+  font-bold
+  text-white
+  leading-tight
+  mb-6
+  text-center;
+}
+
+/* Description */
+.skills-description {
+  @apply text-slate-300
+  text-base md:text-lg
+  leading-8 md:leading-10
+  max-w-3xl
+  mx-auto;
+}
+
+/* ========================================
+   GRID
+======================================== */
+
+.skills-grid {
+  @apply grid
+  grid-cols-1 md:grid-cols-2
+  gap-6 md:gap-8;
+}
+
+/* ========================================
+   CARTE
+======================================== */
+
+.skills-card {
+
+  @apply bg-slate-800/70
+  border border-slate-700
+  rounded-2xl
+
+  p-8 md:p-10
+
+  min-h-[300px]
+
+  flex flex-col
+  justify-center
+
+  shadow-lg
+  transition duration-300
+
+  hover:bg-slate-800
+  hover:border-orange-500
+  hover:-translate-y-1
+  hover:shadow-orange-500/20;
+}
+
+/* Titre */
+.skills-card-title {
+
+  @apply text-2xl md:text-3xl
+  font-bold
+  text-white
+  text-center
+
+  mb-10;
+}
+
+/* ========================================
+   TAGS
+======================================== */
+
+/* Zone des tags */
+
+.skills-tags {
+
+  @apply grid
+  grid-cols-2
+
+  gap-5
+
+  justify-items-center
+  items-center;
+
+}
+
+/* Conteneur tooltip */
+
+.skills-tooltip {
+
+  @apply relative
+  w-full
+  flex
+  justify-center;
+}
+
+/* Base commune tags */
+
+.skills-tag,
+.skills-tag-featured {
+
+  @apply w-full
+  max-w-[260px]
+
+  px-5 py-3
+
+  rounded-2xl
+
+  text-center
+  text-sm md:text-base
+
+  transition duration-300;
+}
+
+/* Tag classique */
+
+.skills-tag {
+
+  @apply bg-slate-900
+  border border-slate-700
+  text-slate-300
+
+  hover:border-orange-500
+  hover:text-orange-500;
+}
+
+/* Tag important */
+
+.skills-tag-featured {
+
+  @apply bg-orange-500/10
+  border border-orange-500
+  text-orange-400
+  font-semibold
+
+  hover:bg-orange-500
+  hover:text-white;
+}
+
+/* ========================================
+   TOOLTIP
+======================================== */
+
+/* Bulle */
+
+.skills-tooltip-content {
+
+  @apply absolute
+  left-1/2
+  -translate-x-1/2
+  bottom-full
+  mb-2
+
+  w-52
+  p-2.5
+
+  rounded-lg
+  border border-slate-700
+
+  bg-slate-950/95
+  backdrop-blur-sm
+
+  text-slate-300
+  text-xs
+  leading-5
+
+  opacity-0
+  pointer-events-none
+
+  transition duration-200
+
+  shadow-lg
+  z-50;
+}
+
+/* Apparition */
+
+.skills-tooltip:hover .skills-tooltip-content {
+
+  @apply opacity-100;
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 768px) {
+
+  .skills-card {
+
+    @apply min-h-fit
+    p-7;
+  }
+
+  .skills-card-title {
+
+    @apply text-2xl
+    mb-8;
+  }
+
+  .skills-tags {
+
+    @apply grid-cols-1
+    gap-4;
+  }
+
+  .skills-tag,
+  .skills-tag-featured {
+
+    @apply max-w-full
+    px-4 py-2
+    text-sm;
+  }
+
+  .skills-tooltip-content {
+
+    @apply hidden;
+  }
+}

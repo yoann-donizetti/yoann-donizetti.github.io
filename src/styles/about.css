@@ -1,0 +1,109 @@
+/* ========================================
+   ABOUT SECTION
+   Section présentation / parcours
+======================================== */
+
+/* Section globale */
+.about-section {
+  @apply bg-slate-950 px-6 py-24;
+}
+
+/* Conteneur principal */
+.about-container {
+  @apply max-w-7xl mx-auto
+  grid grid-cols-1 md:grid-cols-2
+  gap-16 items-start;
+}
+
+/* Bloc texte */
+.about-content {
+  @apply max-w-2xl;
+}
+
+/* Petit label orange */
+.about-label {
+  @apply text-orange-500 font-semibold uppercase tracking-wide mb-4;
+}
+
+/* Titre principal */
+.about-title {
+  @apply text-3xl md:text-5xl
+  font-bold text-white
+  mb-8 leading-tight
+  text-center md:text-left;
+}
+
+/* Zone des paragraphes */
+.about-text {
+  @apply space-y-6
+  text-slate-300
+  text-[17px] md:text-base
+  leading-7 md:leading-10
+  text-left;
+}
+
+/* Justification uniquement desktop */
+@media (min-width: 768px) {
+
+  .about-text {
+    text-align: justify;
+  }
+
+}
+
+/* Mise en avant des mots importants */
+.about-text strong {
+  @apply text-orange-500 font-semibold;
+}
+
+/* Grille contenant les cartes */
+.about-cards {
+  @apply grid grid-cols-1 sm:grid-cols-2
+  gap-6 md:mt-20;
+}
+
+/* Carte individuelle */
+.about-card {
+  @apply bg-slate-800/70
+  border border-slate-700
+  rounded-2xl
+  p-6
+  shadow-lg
+  transition duration-300
+  hover:bg-slate-800
+  hover:border-orange-500
+  hover:-translate-y-1
+  hover:shadow-orange-500/20;
+}
+
+/* Titre d'une carte */
+.about-card-title {
+  @apply text-xl font-semibold text-white mb-3;
+}
+
+/* Description d'une carte */
+.about-card-description {
+  @apply text-slate-400 leading-7;
+}
+
+/* ========================================
+   RESPONSIVE ABOUT
+======================================== */
+
+@media (max-width: 767px) {
+  .about-section {
+    @apply pt-28;
+  }
+
+  .about-label {
+    @apply mb-6;
+  }
+
+  .about-title {
+    @apply text-3xl leading-tight;
+  }
+
+  .about-text {
+    @apply text-justify leading-7;
+  }
+}

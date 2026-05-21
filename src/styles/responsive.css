@@ -1,0 +1,125 @@
+/* ========================================
+   RESPONSIVE MOBILE
+   Ajustements smartphones/tablettes
+======================================== */
+
+@media (max-width: 767px) {
+
+  /* ========================================
+     HERO
+  ======================================== */
+
+  .hero-section {
+    @apply pt-28 pb-16;
+  }
+
+  .hero-container {
+    @apply gap-10;
+  }
+
+  .hero-title {
+    @apply text-3xl text-center;
+  }
+
+  .hero-subtitle {
+    @apply text-xl text-center;
+  }
+
+  .hero-description {
+    @apply text-base leading-8 text-center;
+  }
+
+  .hero-buttons {
+    @apply justify-center;
+  }
+
+  /* ========================================
+     SECTIONS
+  ======================================== */
+
+  .about-section,
+  .skills-section,
+  .projects-section,
+  .contact-section {
+    @apply py-16;
+  }
+
+  /* ========================================
+     TITRES
+  ======================================== */
+
+  .about-title,
+  .skills-title,
+  .projects-title,
+  .contact-title {
+    @apply text-4xl text-center leading-tight;
+  }
+
+  /* ========================================
+     DESCRIPTIONS
+  ======================================== */
+
+  .about-description,
+  .skills-description,
+  .projects-description,
+  .contact-description {
+    @apply text-center text-lg leading-9;
+  }
+
+  /* ========================================
+     HEADERS
+  ======================================== */
+
+  .skills-header-content,
+  .projects-header-content {
+    @apply text-center;
+  }
+
+  /* ========================================
+     CARTES
+  ======================================== */
+
+  .skills-card,
+  .project-card {
+    @apply p-5;
+  }
+
+  .project-title {
+    @apply text-xl text-center;
+  }
+
+  .project-description {
+    @apply text-center;
+  }
+
+  .project-highlights {
+    @apply text-sm;
+  }
+
+  /* ========================================
+     CONTACT
+  ======================================== */
+
+  .contact-content {
+    @apply flex flex-col items-center text-center px-4;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .contact-links {
+    @apply justify-center;
+  }
+
+  /* ========================================
+     FOOTER
+  ======================================== */
+
+  .footer-container {
+    @apply gap-8;
+  }
+
+  .footer-tech {
+    @apply max-w-sm justify-center;
+  }
+
+}

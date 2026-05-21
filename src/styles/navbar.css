@@ -1,0 +1,95 @@
+/* ========================================
+   NAVBAR
+   Barre de navigation fixe du portfolio
+======================================== */
+
+/* Barre principale */
+.navbar {
+  @apply w-full fixed top-0 left-0 z-50
+  bg-slate-950/85 backdrop-blur-md
+  border-b border-slate-800;
+}
+
+/* Conteneur interne */
+.navbar-container {
+  @apply max-w-7xl mx-auto px-6 py-3
+  flex items-center;
+}
+
+/* ========================================
+   LOGO / NOM
+======================================== */
+
+/* Nom affiché dans la navbar */
+.navbar-logo {
+  @apply text-lg md:text-2xl font-bold text-white mr-auto tracking-tight transition duration-300;
+
+  text-shadow:
+    0 0 2px rgba(249, 115, 22, 0.25);
+}
+
+/* Effet sobre au survol du nom */
+.navbar-logo:hover {
+  color: rgb(249 115 22);
+
+  text-shadow:
+    0 0 8px rgba(249, 115, 22, 0.35);
+
+  transform: translateY(-1px);
+}
+
+/* ========================================
+   NAVIGATION DESKTOP
+======================================== */
+
+/* Liste des liens desktop */
+.navbar-links {
+  @apply hidden md:flex items-center gap-12
+  text-orange-500 font-medium mx-auto;
+}
+
+/* Lien individuel */
+.navbar-link {
+  @apply relative cursor-pointer
+  transition duration-300
+  hover:text-white;
+}
+
+/* Ligne animée sous les liens */
+.navbar-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: rgb(249 115 22);
+  transition: width 0.3s ease;
+}
+
+/* Animation underline */
+.navbar-link:hover::after {
+  width: 100%;
+}
+
+/* ========================================
+   MENU MOBILE
+======================================== */
+
+/* Bouton burger */
+.navbar-mobile-button {
+  @apply md:hidden text-orange-500
+  text-3xl font-bold leading-none
+  transition duration-300
+  hover:text-white;
+}
+
+/* Menu déroulant mobile */
+.navbar-mobile-menu {
+  @apply md:hidden
+  bg-slate-950/95 backdrop-blur-md
+  border-t border-slate-800
+  px-6 py-5
+  flex flex-col gap-5
+  text-orange-500 font-medium;
+}

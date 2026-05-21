@@ -1,0 +1,63 @@
+/* ========================================
+   GLOBAL
+   Styles généraux du site
+======================================== */
+
+/* Active le scroll fluide quand on clique sur les liens de navigation */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Style général appliqué à toute la page */
+body {
+  @apply bg-slate-900 text-white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ========================================
+   UTILITAIRES
+   Classes réutilisables partout
+======================================== */
+
+/* Permet de mettre un mot en évidence dans les textes */
+.highlight {
+  @apply text-orange-500 font-semibold;
+}
+
+/* ========================================
+   ANIMATIONS GLOBALES
+======================================== */
+
+/* Animation d'apparition douce */
+.fade-in {
+  animation: fadeIn 0.8s ease-out both;
+}
+
+/* Animation avec léger déplacement vers le haut */
+.fade-up {
+  animation: fadeUp 0.8s ease-out both;
+}
+
+/* Définition fade simple */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Définition fade + montée */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

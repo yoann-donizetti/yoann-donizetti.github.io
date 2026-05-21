@@ -1,0 +1,157 @@
+/* ========================================
+   FOOTER
+   Bas du portfolio
+======================================== */
+
+/* Footer principal */
+.footer {
+  @apply bg-slate-950
+  border-t border-slate-800
+  px-6 py-10;
+}
+
+/* Conteneur principal */
+.footer-container {
+  @apply max-w-7xl mx-auto
+
+  flex flex-col
+  xl:flex-row
+
+  justify-between
+  items-center
+
+  gap-8;
+}
+
+/* ========================================
+   BLOC GAUCHE
+======================================== */
+
+.footer-left {
+  @apply text-center xl:text-left;
+}
+
+/* Nom */
+.footer-name {
+  @apply text-white
+  font-semibold
+  text-2xl
+  tracking-tight
+  mb-2;
+}
+
+/* Métier */
+.footer-role {
+  @apply text-slate-400
+  text-base;
+}
+
+/* ========================================
+   STACK TECH
+======================================== */
+
+.footer-tech {
+  @apply flex flex-wrap
+  justify-center
+  items-center
+  gap-3;
+}
+
+/* Item individuel */
+.footer-tech-item {
+  @apply flex items-center gap-3;
+}
+
+/* Texte */
+.footer-tech-text {
+  @apply text-slate-300
+  text-sm md:text-base
+  transition duration-300
+  hover:text-orange-400;
+}
+
+/* Séparateur */
+.footer-tech-separator {
+  @apply text-orange-500
+  opacity-70
+  text-sm;
+}
+
+/* ========================================
+   ICÔNES
+======================================== */
+
+.footer-links {
+  @apply flex items-center gap-4;
+}
+
+/* Boutons icônes */
+.footer-icon {
+  @apply w-12 h-12
+
+  rounded-2xl
+
+  border border-slate-700
+  bg-slate-800/70
+
+  flex items-center justify-center
+
+  text-slate-300 text-lg
+
+  transition-all duration-300
+
+  hover:border-orange-500
+  hover:text-orange-500
+  hover:-translate-y-1
+  hover:shadow-orange-500/20;
+}
+
+/* ========================================
+   COPYRIGHT
+======================================== */
+
+.footer-copy {
+  @apply text-center
+  text-slate-500
+  text-sm
+  mt-10;
+}
+
+/* ========================================
+   RESPONSIVE MOBILE
+======================================== */
+
+@media (max-width: 767px) {
+
+  .footer {
+    @apply py-8;
+  }
+
+  .footer-container {
+    @apply gap-7;
+  }
+
+  .footer-name {
+    @apply text-xl;
+  }
+
+  .footer-role {
+    @apply text-sm;
+  }
+
+  .footer-tech {
+    @apply gap-2;
+  }
+
+  .footer-tech-item {
+    @apply gap-2;
+  }
+
+  .footer-tech-text {
+    @apply text-sm;
+  }
+
+  .footer-icon {
+    @apply w-11 h-11 text-base;
+  }
+}
