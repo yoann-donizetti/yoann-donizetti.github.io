@@ -331,15 +331,18 @@
   rounded-3xl
   p-6 md:p-8
 
-  flex flex-col lg:flex-row
-  justify-between
-  items-start lg:items-center
+  flex flex-col
+  items-center
+  text-center
 
   gap-6
 
   transition-all duration-300
 
   hover:border-orange-500;
+}
+.personal-project-card .project-actions {
+  @apply justify-center w-full;
 }
 
 .personal-project-title {
