@@ -14,5 +14,5 @@
 
   email: "yoann.donizetti@gmail.com",
 
-  cv: "/cv/CV_Yoann_Donizetti_DataScientist.pdf"
+cv: "/cv/CV_Yoann_Donizetti_DataScientist.pdf"
 };
